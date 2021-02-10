@@ -1,0 +1,484 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 15px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.banner{
+    width: 100%;    
+    background-image: url("../img/intro-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.logo a{
+    margin-top: 0.5rem;
+    font-size: 2rem;
+    float: left;
+    text-transform: uppercase;
+    color: white;
+
+}
+.nav{
+    width: 100%;
+}
+nav ul{
+    float: right;
+    list-style: none;
+}
+nav ul li{
+    float: left;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+}
+nav ul li a{
+    padding-top: 0.7rem;
+    margin-right: 0.7rem;
+    font-size: 1.1rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+
+}
+nav ul li a:hover{
+    text-decoration: underline;
+    text-decoration-color:red;
+    text-decoration-style:dotted; 
+    
+}
+.banner-text{
+    clear: both;
+    text-align: center;
+    padding: 10rem 0rem;
+}
+.banner-text p{
+    line-height: 2rem;
+    font-size: 1.5rem;
+    color: white;   
+    text-transform:capitalize;
+}
+.banner-text h1{
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: white;
+     margin: 1.7rem 0rem;
+}
+.banner-text button{
+    width: 175px;
+    padding: 1rem;
+    border: none;
+    margin: 15px 5px;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#00bcd4;
+    opacity: 0.6;
+    color:white;
+    font-weight: 700;
+    text-transform: uppercase;    
+}
+.banner-text button:hover{
+    background-color: white;
+    color:black;
+    opacity: 1;
+}
+.banner-text .btn{
+    background-color: rgb(173, 36, 64);
+    opacity: 1;
+    border: 1.5px solid white;
+}
+ .nav .fa-navicon{
+    display: none;
+}
+
+/************************2nd section********/
+.overview{
+    width: 100%;
+   /* height: 300px;*/
+   /* background-color: burlywood;*/
+    margin: 80px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.overview .text{
+    width: 50%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+.text h1{
+    font-size: 1.3rem;
+    line-height: 2.1rem;
+    text-transform:capitalize;
+}
+.text p,.program p{
+     font-size: 0.9rem;
+    padding-top: 0.8rem;
+    line-height: 1.7rem;
+    text-transform:capitalize;
+    color: rgb(124, 104, 104);
+    font-weight: 600;
+    
+}
+.overview .img-text{
+    width: 45%;    
+    padding-top: 12px;
+}
+.overview .img-text img{
+    width: 100%;
+}
+/******************* 2nd time overview*/
+.overview-banner{
+    width: 100%;
+    background-color: #222;
+    padding: 0.3rem 0rem;
+    background-attachment: fixed;    
+}
+
+.program{
+    width: 30%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 1rem 0.1rem;
+}
+.program h1{
+    padding: 0.7rem;
+    color: white;
+    text-transform: capitalize;
+}
+.program p{
+    font-weight: lighter;
+    color:#707070;
+}
+#icon{
+    display: block;
+    color: orangered;
+    margin-top: 1.5rem;
+    font-size: 2.8rem;
+}
+/***********************************last overview*/
+ .text .my-text{
+    text-transform: uppercase;
+}
+video{
+    width: 100%;
+}
+
+/**************accordion*************/
+.dev{
+    width: 100%;
+    padding: 30px 0px;
+}
+.dev h1,p{
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 10px;
+}
+.accordion{
+    background-color: #eee;
+    color: #444;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin-top: 15px;
+}
+.active,.accordion:hover{
+    background-color: #ccc;
+}
+.panel{
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+}
+
+.panel p{
+    font-size: 15px;
+   /* background-color: #ccc;*/
+    line-height: 25px;
+    
+}
+.accordion::after{
+    content:'\02795';
+    font-size: 10px;
+    float: right;
+    color:#ccc;
+    margin-left: 5px;
+}
+.active::after{
+    content: '\2796';
+}
+
+/****************************Tab section here********/
+.tab{
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    
+}
+.tab button{
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.tab button:hover{
+    background-color: #ccc;
+}
+.tabcontent{
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    display: none;
+    margin-bottom: 20px;
+
+}
+/******************/
+.box{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+.left{
+    width: 20%;
+}
+.right{
+    width: 60%;
+}
+.right h1,p{
+   text-transform: capitalize;
+    margin-top: 10px;
+}
+.left img{
+    width: 100%;
+    border-radius: 50%;
+}
+.dis{
+    display: block;
+}
+
+/***** form******/
+.contact-banner{
+    width: 100%;
+    background-image: url("../img/register-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 30px 0px;
+}
+.contact-banner2{
+    background-image: url(../img/venue-bg.jpg);
+}
+.contact-banner3{
+    background-image: url(../img/contact-bg.jpg);
+    
+}
+
+
+form{
+    margin: 10px;
+    text-align: justify;
+    
+}
+input[type="text"],input[type="tel"],input[type="email"]{
+    display: block;
+    margin-top: 15px;
+     width: 96%;
+     padding: 10px;
+     border: 1px solid white;
+     outline: none;
+     background-color:white;
+     font-size: 15px;
+}
+::placeholder{
+    padding-left: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+input[type="submit"]{
+    padding: 10px;
+    width: 110px;
+    margin:15px 0px;
+    border-radius:18px;
+    border: none;
+    background-color: crimson;
+    font-size: 18px;    
+    color: white;
+    outline: none;
+}
+.text2{
+    color: white;
+}
+.head{
+    color: white;
+    line-height: 30px;
+}
+ .text .para{
+    font-weight: 100;
+    
+}
+/*************venu*************/
+.head3{
+    line-height: 36px;
+    text-transform: capitalize;
+    margin-top: 15px;
+}
+/************sponser************/
+.sponser{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0px;
+}
+.sponser .spon{
+    width: 25%;
+}
+.sponser .spon img{
+    width: 100%;
+}
+.para{
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 70px;
+    font-size: 50px;
+}
+/**********last form************/
+#form{
+   background-color: white;
+   box-sizing: border-box;
+   padding:50px 10px;
+   border-radius: 5px;
+}
+#form h1{
+    text-transform: capitalize;
+    text-align: center;
+}
+#area{
+    background-color: white;   
+    
+}
+#area2{
+    background-color: black;
+    color: #ccc;
+    margin-left: 15px;
+}
+.btn{
+    width: 135px;
+    background-color: crimson;
+    color:white;
+    border: none;
+    margin-top: 15px;
+    height: 50px;
+    outline: none;
+    font-size: 17px;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+footer{
+   /* background-color: black;*/
+    padding: 20px 0px;
+}
+.foter{
+    
+    text-align: center;
+    padding: 15px 0px;
+}
+.foter h1{
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #707070;
+}
+.foter i{
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 16px;
+    color: grey;
+    border-radius: 50%;
+    transition: 0.4s;
+    text-align: center;
+}
+.foter i:hover{
+    background-color: crimson;
+    color: white;
+}
+
+
+
+
+
+
+@media only screen and (max-width:823px){
+    .logo a{
+        /*float: none;*/
+        margin:10px 10px;
+    }
+    .nav{
+        position: relative;
+    }
+    nav{
+        width: 30%;
+        position: absolute;
+        background-color: black;
+        padding: 18px 0px;
+        opacity: 1;
+        border-radius: 3px;
+        margin-top:0px;
+        margin-bottom: 10px;
+        display: none;
+                
+        
+    }
+    
+    nav ul li{
+        float: none;        
+    }
+   
+    
+     .nav .fa-navicon{
+        float: right;
+        color: red;
+        margin-top: 15px;
+        margin-right: 10px;
+        display: block;
+        font-size: 25px;
+    }
+    /******************2nd section**********/
+    .overview{
+        display: block;
+    }
+    .overview .text, .overview .img-text{
+        width: 100%;
+        margin-top: 15px;
+    }
+    .program{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .program h1{
+        font-size: 1.3rem;
+    }
+    .box{
+        display: block;
+    }
+    .left,.right{
+        width: 80%;
+        clear: both;
+        text-align: center;
+    }
+}
